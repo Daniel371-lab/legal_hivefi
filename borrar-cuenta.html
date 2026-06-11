@@ -1,22 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliminar Cuenta - Hive-Fi</title>
+    <title>Eliminación de Cuenta - Hive-Fi</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 0 20px; text-align: center; color: #333; }
-        h1 { color: #d9534f; }
-        .btn { display: inline-block; background: #d9534f; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
-        .btn:hover { background: #c9302c; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.7; 
+            max-width: 600px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            color: #333; 
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        h1 { color: #d9534f; border-bottom: 2px solid #e8eaed; padding-bottom: 15px; font-size: 26px; margin-top: 0; }
+        p { color: #3c4043; font-size: 16px; text-align: left; }
+        .warning-box {
+            background-color: #fdf2f2;
+            border-left: 4px solid #d9534f;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+            text-align: left;
+        }
+        .warning-box strong { color: #b52b27; }
+        .btn { 
+            display: inline-block; 
+            background-color: #d9534f; 
+            color: #ffffff; 
+            padding: 14px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            font-size: 16px;
+            margin-top: 25px;
+            box-shadow: 0 2px 4px rgba(217, 83, 79, 0.3);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .btn:hover { 
+            background-color: #c9302c; 
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #70757a;
+            border-top: 1px solid #e8eaed;
+            padding-top: 20px;
+        }
+        a.mail-link { color: #1a73e8; text-decoration: none; }
+        a.mail-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Solicitud de Eliminación de Cuenta (Hive-Fi)</h1>
-    <p>Si deseas eliminar tu cuenta de <strong>Hive-Fi</strong> y borrar de forma permanente tus datos de acceso, puedes solicitarlo aquí.</p>
-    <p>Por favor, haz clic en el siguiente botón para enviarnos un correo con tu solicitud. Procesaremos la baja en un plazo máximo de 72 horas.</p>
-    
-    <a href="mailto:jplabscreator@gmail.com?subject=Solicitud de eliminacion de cuenta Hive-Fi" class="btn">Solicitar Eliminación de Datos</a>
+
+<div class="container">
+    <h1>Solicitud de Eliminación de Cuenta</h1>
+    <p>Si eres usuario de <strong>Hive-Fi</strong> y deseas solicitar la eliminación definitiva de tu cuenta de usuario y todos los datos asociados de nuestra base de datos externa, puedes hacerlo de forma directa desde esta página.</p>
+
+    <div class="warning-box">
+        <strong>⚠️ Atención: Esta acción es irreversible</strong>
+        <br>Al procesar esta solicitud se borrarán de forma permanente: tu correo electrónico, tu nombre de usuario, tus credenciales de acceso y todo el historial de configuraciones o datos sincronizados en la aplicación.
+    </div>
+
+    <p><strong>Instrucciones:</strong> Para validar tu identidad y garantizar la seguridad de tus datos, por favor haz clic en el botón de abajo para generar un correo electrónico automático. **Asegúrate de enviar el mensaje desde la misma dirección de correo con la que te registraste en la aplicación**.</p>
+
+    <a href="mailto:jplabscreator@gmail.com?subject=Solicitud de eliminacion de cuenta Hive-Fi&body=Hola,%0A%0ASolicito la eliminacion permanente de mi cuenta de usuario en Hive-Fi y el borrado de todos mis datos asociados a esta direccion de correo electrónico.%0A%0ASaludos." class="btn">Confirmar y Solicitar Borrado</a>
+
+    <p style="margin-top: 25px; font-size: 14px; color: #5f6368; text-align: center;">
+        ¿El botón no abre tu aplicación de correo? Puedes escribirnos directamente a: <br>
+        <strong><a href="mailto:jplabscreator@gmail.com" class="mail-link">jplabscreator@gmail.com</a></strong> indicando el asunto "Solicitud de eliminación de cuenta Hive-Fi".
+    </p>
+
+    <p style="font-size: 14px; color: #5f6368; text-align: center;">
+        <em>Las solicitudes enviadas por este medio se procesan en un plazo máximo de 72 horas.</em>
+    </p>
+
+    <div class="footer">
+        © 2026 Hive-Fi. Soporte de Privacidad del Usuario.
+    </div>
+</div>
+
 </body>
 </html>
-
